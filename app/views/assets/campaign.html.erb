@@ -1,0 +1,9 @@
+<h3>
+  Eloqua Campaign: <%= @campaign.name %>
+</h3>
+<p>This campaign is made up of the following steps:</p>
+<ul>
+<% @campaign.elements.each do |step| %>
+  <li><%= step.name %></li>
+<% end %>
+</ul>

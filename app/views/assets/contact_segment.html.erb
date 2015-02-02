@@ -1,0 +1,10 @@
+<h3>
+  Eloqua Contact Segment: <%= @contact_segment.name %>
+</h3>
+<p>This contact segment is made up of the following elements:</p>
+<ul>
+<% @contact_segment.elements.each do |element| %>
+  <li><%= element.type %></li>
+<% end %>
+</ul>
+<%= contact_segment.to_json %>
